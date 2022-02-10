@@ -9,9 +9,10 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build-prod": "node --max_old_space_size=8000 ./node_modules/@angular/cli/bin/ng build --configuration production",
+    "build-prod": "node --max_old_space_size=8000 ./node_modules/@angular/cli/bin/ng build --configuration production ",
     "build-prod-state": "node --max_old_space_size=8000 ./node_modules/@angular/cli/bin/ng build --configuration production --stats-json",
-    "bundle-report": "webpack-bundle-analyzer dist/enlink/stats.json"
+    "bundle-report": "webpack-bundle-analyzer dist/enlink/stats.json",
+    "build:prod": "ng build --configuration production --base-href https://salazar94.github.io/tenplateNew/"
   },
   "private": true,
   "dependencies": {
