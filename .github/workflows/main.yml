@@ -21,7 +21,7 @@ jobs:
       run: npm install
 
     - name: Build
-      run:  ng build  --base-href="https://salazar94.github.io/tenplateNew"
+      run:  npm run ng build --base-href="https://salazar94.github.io/tenplateNew"
 
     - name: Deploy
       if: success()      
