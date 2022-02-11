@@ -10,28 +10,28 @@ import { ThemeConstantService } from './services/theme-constant.service';
 import { SearchPipe } from './pipes/search.pipe';
 
 @NgModule({
-    exports: [
-        CommonModule,
-        FormsModule,
-        HttpClientModule,
-        HttpClientJsonpModule,
-        NzIconModule,
-        PerfectScrollbarModule,
-        SearchPipe
-    ],
-    imports: [
-        RouterModule,
-        CommonModule,
-        NzIconModule,
-        NzToolTipModule,
-        PerfectScrollbarModule
-    ],
-    declarations: [
-        SearchPipe
-    ],
-    providers: [
-        ThemeConstantService
-    ]
+  exports: [
+    CommonModule,
+    FormsModule,
+    HttpClientModule,
+    HttpClientJsonpModule,
+    NzIconModule,
+    PerfectScrollbarModule,
+    SearchPipe
+  ],
+  imports: [
+    RouterModule,
+    CommonModule,
+    NzIconModule,
+    NzToolTipModule,
+    PerfectScrollbarModule
+  ],
+  declarations: [
+    SearchPipe
+  ],
+  providers: [
+    ThemeConstantService
+  ]
 })
 
 export class SharedModule { }

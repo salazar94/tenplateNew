@@ -27,43 +27,45 @@ import { DefaultDashboardComponent } from './default/default-dashboard.component
 import { EcommerceDashboardComponent } from './e-commerce/e-commerce-dashboard.component';
 import { ProjectsDashboardComponent } from './projects/projects-dashboard.component';
 import { CrmDashboardComponent } from './crm/crm-dashboard.component';
+import { DientesComponent } from './dientes/dientes.component';
 
 const antdModule = [
-    NzButtonModule,
-    NzCardModule,
-    NzAvatarModule,
-    NzRateModule,
-    NzBadgeModule,
-    NzProgressModule,
-    NzRadioModule,
-    NzTableModule,
-    NzDropDownModule,
-    NzTimelineModule,
-    NzTabsModule,
-    NzTagModule,
-    NzListModule,
-    NzCalendarModule,
-    NzToolTipModule,
-    NzCheckboxModule
+  NzButtonModule,
+  NzCardModule,
+  NzAvatarModule,
+  NzRateModule,
+  NzBadgeModule,
+  NzProgressModule,
+  NzRadioModule,
+  NzTableModule,
+  NzDropDownModule,
+  NzTimelineModule,
+  NzTabsModule,
+  NzTagModule,
+  NzListModule,
+  NzCalendarModule,
+  NzToolTipModule,
+  NzCheckboxModule
 ]
 
 @NgModule({
-    imports: [
-        CommonModule,
-        SharedModule,
-        DashboardRoutingModule,
-        NgChartjsModule,
-        ...antdModule
-    ],
-    exports: [],
-    declarations: [
-        DefaultDashboardComponent,
-        EcommerceDashboardComponent,
-        ProjectsDashboardComponent,
-        CrmDashboardComponent
-    ],
-    providers: [
-        ThemeConstantService
-    ],
+  imports: [
+    CommonModule,
+    SharedModule,
+    DashboardRoutingModule,
+    NgChartjsModule,
+    ...antdModule
+  ],
+  exports: [],
+  declarations: [
+    DefaultDashboardComponent,
+    EcommerceDashboardComponent,
+    ProjectsDashboardComponent,
+    CrmDashboardComponent,
+    DientesComponent
+  ],
+  providers: [
+    ThemeConstantService
+  ],
 })
 export class DashboardModule { }

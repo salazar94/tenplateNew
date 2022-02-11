@@ -45,7 +45,7 @@
     </div>
 </div>
 <div class="row">
-    <div class="col-md-12 col-lg-8">
+    <div class="col-md-12 col-lg-7">
         <nz-card>
             <div class="d-flex justify-content-between align-items-center">
                 <h5>Total Revenue</h5>
@@ -57,24 +57,27 @@
                 </div>
             </div>
             <div class="m-t-50" style="height: 330px">
-                <canvas ngChartjs 
-                    [datasets]="revenueChartData" 
+                <canvas ngChartjs
+                    [datasets]="revenueChartData"
                     [labels]="revenueChartLabels"
-                    [options]="revenueChartOptions" 
-                    [colors]="revenueChartColors" 
+                    [options]="revenueChartOptions"
+                    [colors]="revenueChartColors"
                     [legend]="false"
                     [chartType]="revenueChartType">
                 </canvas>
             </div>
         </nz-card>
     </div>
+    <div class="col-md-12 col-lg-5">
+    <app-dientes></app-dientes>
+    </div>
     <div class="col-md-12 col-lg-4">
         <nz-card>
             <h5 class="m-b-0">Customers</h5>
             <div class="m-v-60 text-center" style="height: 200px">
-                <canvas ngChartjs 
-                    [data]="customersChartData" 
-                    [labels]="customersChartLabels" 
+                <canvas ngChartjs
+                    [data]="customersChartData"
+                    [labels]="customersChartLabels"
                     [chartType]="customersChartType"
                     [colors]="customersChartColors"
                     [options]="customersChartOptions"
@@ -89,7 +92,7 @@
                             <div class="m-l-5">
                                 <h4 class="m-b-0">350</h4>
                                 <p class="m-b-0 muted">New</p>
-                            </div>    
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -100,7 +103,7 @@
                             <div class="m-l-5">
                                 <h4 class="m-b-0">450</h4>
                                 <p class="m-b-0 muted">Returning</p>
-                            </div>    
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -111,7 +114,7 @@
                             <div class="m-l-5">
                                 <h4 class="m-b-0">100</h4>
                                 <p class="m-b-0 muted">Others</p>
-                            </div>    
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -132,12 +135,12 @@
                 </div>
             </div>
             <div class="m-t-50" style="height: 360px">
-                <canvas ngChartjs 
-                    [datasets]="avgProfitChartData" 
+                <canvas ngChartjs
+                    [datasets]="avgProfitChartData"
                     [labels]="avgProfitChartLabels"
-                    [options]="avgProfitChartOptions" 
+                    [options]="avgProfitChartOptions"
                     [colors]="avgProfitChartColors"
-                    [legend]="avgProfitChartLegend" 
+                    [legend]="avgProfitChartLegend"
                     [chartType]="avgProfitChartType">
                 </canvas>
             </div>
@@ -233,7 +236,7 @@
                     </div>
                 </div>
             </div>
-        </nz-card>      
+        </nz-card>
     </div>
     <div class="col-md-12 col-lg-4">
         <nz-card>
@@ -251,7 +254,7 @@
                                 <div class="m-l-20">
                                     <h5 class="m-b-5">{{item.name}}</h5>
                                     <p class="m-b-0">
-                                        <span class="font-weight-semibold">{{item.action}} </span> 
+                                        <span class="font-weight-semibold">{{item.action}} </span>
                                         <span class="m-l-5"> {{item.target}}</span>
                                     </p>
                                     <span class="text-muted font-size-13">
@@ -267,7 +270,7 @@
                     </div>
                 </perfect-scrollbar>
             </div>
-        </nz-card>    
+        </nz-card>
     </div>
     <div class="col-md-12 col-lg-4">
         <nz-card [nzTitle]="tasksHeader">
@@ -317,5 +320,5 @@
                 </div>
             </div>
         </nz-card>
-    </div>    
+    </div>
 </div>
